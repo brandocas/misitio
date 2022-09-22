@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0134)file:///D:/Ciclo%20II/Estructura%20de%20Datos%20y%20Programaci%C3%B3n%20Orientada%20a%20Objetos/EDDPOO/Proyecto_Declaracion/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella mia</title>
+    <style>
+     .body {
+        background-color: crimson;
+        text-align: center;
+    }
+    
+    .body__title {
+        color: white;
+    }
+    .body__img {
+        width: 100%;
+        border-radius: 50%;
+    }
+    </style>
+</head>
+<body class="body">
+ 
+    <h1 class="body__title">Mi amor solo pasaba por aqui para decirte que te amo ❤❤</h1> 
+    <h1 class="body__title">Y preguntarte si soy el amor de tu vida? 😍</h1> 
+    <img src="./Bella mia_files/lola9.jpg" alt="Nosotros" class="body__img">
+    <button id="yes">Si lo eres 😍</button>
+    <button id="no" style="position: absolute; top: 527.648px; left: 905.068px;">Aun no!!!! 😢</button>
+
+    <script>
+        const vutonSi = document.getElementById('yes');
+        const vutonNo = document.getElementById('no');
+
+        const teamo = () => {
+            alert('💕 Y tu el mio bebe');
+            location.href = 'https://www.youtube.com/watch?v=drqcFw2y5eY'
+        }
+
+        const evitarelno = () => {
+            vutonNo.style.position = 'absolute';
+            vutonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+            vutonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+        }
+
+        vutonSi.addEventListener('click',teamo);
+        vutonNo.addEventListener('mouseover',evitarelno);
+    </script>
+
+ </body></html>
